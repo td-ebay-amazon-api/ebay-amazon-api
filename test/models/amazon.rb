@@ -1,3 +1,0 @@
-class Amazon
-
-end
