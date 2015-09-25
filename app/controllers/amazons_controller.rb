@@ -4,11 +4,12 @@ class AmazonsController < ApplicationController
 
   def get_request
 
-    response = get_az_list     #Use this line for live use
-    #response = read_from_json   #Use this line for development/testing
+    #response = get_az_list     #Use this line for live use
+    response = read_from_json   #Use this line for development/testing
 
-    render json: response.to_h  #Live use
-    #render json: response       #Development/Testing
+    #render json: response.to_h  #Live use
+    asin_list = extract_asins(response)
+    render json: asin_list
   end
 
   def get_az_list
@@ -32,6 +33,16 @@ class AmazonsController < ApplicationController
   end
 
   def read_from_json
-    File.read(Rails.root.join('app', 'assets', 'json', 'most_gifted_toys.json'))
+    file = File.read(Rails.root.join('app', 'assets', 'json', 'most_gifted_toys.json'))
+    JSON.parse(file)
+  end
+
+  def extract_asins(response)
+    response = response.to_h
+    asin_list = []
+    response["BrowseNodeLookupResponse"]["BrowseNodes"]["BrowseNode"]["TopItemSet"]["TopItem"].each do |item|
+      asin_list << item["ASIN"]
+    end
+    asin_list
   end
 end

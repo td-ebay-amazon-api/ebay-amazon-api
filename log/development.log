@@ -1283,3 +1283,173 @@ ActionController::RoutingError (No route matches [GET] "/api/v1/amazon"):
 Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:00:01 -0400
 Processing by AmazonsController#get_request as HTML
 Completed 200 OK in 2546ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:01:18 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:21:58 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/amazons_controller.rb:41:in `extract_asins'
+  app/controllers/amazons_controller.rb:11:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.1ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (6.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (187.6ms)
+
+
+Started PUT "/api/v1/console/repl_sessions/d5fe5f2a8b0e9c60325d8df7fd2dd784" for ::1 at 2015-09-25 11:22:21 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/d5fe5f2a8b0e9c60325d8df7fd2dd784" for ::1 at 2015-09-25 11:22:56 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/d5fe5f2a8b0e9c60325d8df7fd2dd784" for ::1 at 2015-09-25 11:23:02 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/d5fe5f2a8b0e9c60325d8df7fd2dd784" for ::1 at 2015-09-25 11:23:10 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/d5fe5f2a8b0e9c60325d8df7fd2dd784" for ::1 at 2015-09-25 11:24:06 -0400
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:25:39 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_h' for #<String:0x007fbb4b11ac70>):
+  app/controllers/amazons_controller.rb:40:in `extract_asins'
+  app/controllers/amazons_controller.rb:11:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (174.9ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:29:26 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/amazons_controller.rb:43:in `extract_asins'
+  app/controllers/amazons_controller.rb:11:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (165.1ms)
+
+
+Started PUT "/api/v1/console/repl_sessions/e3a0188d92c4030fcecee8e5b543426b" for ::1 at 2015-09-25 11:32:03 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/e3a0188d92c4030fcecee8e5b543426b" for ::1 at 2015-09-25 11:32:16 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/e3a0188d92c4030fcecee8e5b543426b" for ::1 at 2015-09-25 11:32:34 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/e3a0188d92c4030fcecee8e5b543426b" for ::1 at 2015-09-25 11:32:39 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/e3a0188d92c4030fcecee8e5b543426b" for ::1 at 2015-09-25 11:32:45 -0400
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:35:41 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:35:51 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:36:59 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:37:09 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:37:27 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/amazons_controller.rb:43:in `extract_asins'
+  app/controllers/amazons_controller.rb:11:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.0ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (78.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (163.0ms)
+
+
+Started PUT "/api/v1/console/repl_sessions/7806e1e872a65cb4ccf8d23767f6e648" for ::1 at 2015-09-25 11:37:46 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/7806e1e872a65cb4ccf8d23767f6e648" for ::1 at 2015-09-25 11:37:52 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/7806e1e872a65cb4ccf8d23767f6e648" for ::1 at 2015-09-25 11:38:11 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/7806e1e872a65cb4ccf8d23767f6e648" for ::1 at 2015-09-25 11:39:22 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/7806e1e872a65cb4ccf8d23767f6e648" for ::1 at 2015-09-25 11:39:33 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/7806e1e872a65cb4ccf8d23767f6e648" for ::1 at 2015-09-25 11:39:50 -0400
+
+
+Started GET "/api/v1/amazon" for ::1 at 2015-09-25 11:40:08 -0400
+Processing by AmazonsController#get_request as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
