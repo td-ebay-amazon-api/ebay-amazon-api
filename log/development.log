@@ -1663,3 +1663,239 @@ Excon::Errors::ServiceUnavailable (Expected(200) <=> Actual(503 Service Unavaila
 Started GET "/api/v1/amazon" for ::1 at 2015-09-25 14:45:43 -0400
 Processing by AmazonsController#get_request as HTML
 Completed 200 OK in 11941ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:27:07 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 500 Internal Server Error in 5290ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/amazon.rb:82:in `block in get_upc_price_list'
+  app/models/amazon.rb:73:in `each'
+  app/models/amazon.rb:73:in `get_upc_price_list'
+  app/models/amazon.rb:95:in `make_a_request'
+  app/controllers/amazons_controller.rb:9:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (177.6ms)
+
+
+Started PUT "/api/v1/console/repl_sessions/3da7eb5b7f739025144ea5c2a972a637" for ::1 at 2015-09-25 16:27:31 -0400
+
+
+Started PUT "/api/v1/console/repl_sessions/3da7eb5b7f739025144ea5c2a972a637" for ::1 at 2015-09-25 16:28:47 -0400
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:29:33 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `asin' for #<AmazonsController:0x007fbb4966d8f0>):
+  app/controllers/amazons_controller.rb:10:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (153.8ms)
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:29:55 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 200 OK in 254ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:30:49 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 500 Internal Server Error in 5692ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/amazon.rb:82:in `block in get_upc_price_list'
+  app/models/amazon.rb:73:in `each'
+  app/models/amazon.rb:73:in `get_upc_price_list'
+  app/models/amazon.rb:95:in `make_a_request'
+  app/controllers/amazons_controller.rb:9:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (158.0ms)
+
+
+Started PUT "/api/v1/console/repl_sessions/2c9e3d626cb9f8087630b57ac619b412" for ::1 at 2015-09-25 16:31:00 -0400
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:31:31 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 200 OK in 160ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=B00VVKE0DG" for ::1 at 2015-09-25 16:31:37 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"B00VVKE0DG"}
+Completed 200 OK in 117ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=B00VVKE0DG" for ::1 at 2015-09-25 16:36:38 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"B00VVKE0DG"}
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/amazon.rb:64:in `extract_asins'
+  app/models/amazon.rb:94:in `make_a_request'
+  app/controllers/amazons_controller.rb:9:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (159.9ms)
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:37:07 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 500 Internal Server Error in 5280ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/amazon.rb:82:in `block in get_upc_price_list'
+  app/models/amazon.rb:73:in `each'
+  app/models/amazon.rb:73:in `get_upc_price_list'
+  app/models/amazon.rb:95:in `make_a_request'
+  app/controllers/amazons_controller.rb:9:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:39:37 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 500 Internal Server Error in 5074ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/amazon.rb:82:in `block in get_upc_price_list'
+  app/models/amazon.rb:73:in `each'
+  app/models/amazon.rb:73:in `get_upc_price_list'
+  app/models/amazon.rb:95:in `make_a_request'
+  app/controllers/amazons_controller.rb:9:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.2ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (152.2ms)
+
+
+Started GET "/api/v1/amazon?node_id=3375251" for ::1 at 2015-09-25 16:42:42 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"3375251"}
+Completed 200 OK in 11754ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=468642" for ::1 at 2015-09-25 16:50:01 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"468642"}
+Completed 200 OK in 11997ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=468642" for ::1 at 2015-09-25 16:50:32 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"468642"}
+Completed 200 OK in 7239ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=468642" for ::1 at 2015-09-25 16:52:49 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"468642"}
+Completed 500 Internal Server Error in 3784ms (ActiveRecord: 0.0ms)
+
+Excon::Errors::ServiceUnavailable (Expected(200) <=> Actual(503 Service Unavailable)
+):
+  app/models/amazon.rb:51:in `get_az_product'
+  app/models/amazon.rb:74:in `block in get_upc_price_list'
+  app/models/amazon.rb:73:in `each'
+  app/models/amazon.rb:73:in `get_upc_price_list'
+  app/models/amazon.rb:99:in `make_a_request'
+  app/controllers/amazons_controller.rb:9:in `get_request'
+
+
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.9ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.6ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Err0r/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (168.5ms)
+
+
+Started GET "/api/v1/amazon?node_id=468642" for ::1 at 2015-09-25 16:53:03 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"468642"}
+Completed 200 OK in 6029ms (Views: 1.6ms | ActiveRecord: 0.0ms)

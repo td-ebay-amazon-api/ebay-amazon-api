@@ -7,7 +7,7 @@ class Amazon
     @product_info
   end
 
-  def get_az_list
+  def get_az_list(node_id)
     #Look up a list of products within a category
     key = ENV['AWS_ACCESS_KEY_ID']
     secret = ENV['AWS_SECRET_ACCESS_KEY']
@@ -19,12 +19,12 @@ class Amazon
      associate_tag: 'dollarsinyour-20'
     )
 
-    params = {
-    "BrowseNodeId" => "165793011",
+    query_params = {
+    "BrowseNodeId" => node_id,
     "ResponseGroup" => "MostGifted"
     }
     @response = request.browse_node_lookup(
-     query: params
+     query: query_params
     )
     @response = @response.to_h
   end
@@ -42,14 +42,14 @@ class Amazon
      associate_tag: 'dollarsinyour-20'
     )
 
-    params = {
+    query_params = {
       "ItemId" => asin,
       "IdType" => "ASIN",
       "ResponseGroup" => "ItemAttributes,OfferSummary",
       "Condition" => "New"
     }
     @product_info = request.item_lookup(
-     query: params
+     query: query_params
     )
     @product_info = @product_info.to_h
   end
@@ -79,18 +79,22 @@ class Amazon
       else
         title = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["Title"]
         upc = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["UPC"]
-        price = response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["LowestNewPrice"]["Amount"]
+        begin
+          price = response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["LowestNewPrice"]["Amount"]
+        rescue
+          price = 0
+        end
       end
       product_information[index] = Product.new(title, price, upc)
       index += 1
-      sleep 1
+      sleep 0.4
     end
     product_information
   end
 
-  def make_a_request
-    #get_az_list     #Live
-    read_from_json  #Development/testing
+  def make_a_request(node_id)
+    get_az_list(node_id)     #Live
+    #read_from_json  #Development/testing
     asin_list = extract_asins
     get_upc_price_list(asin_list)
   end

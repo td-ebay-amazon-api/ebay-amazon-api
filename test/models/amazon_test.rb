@@ -30,6 +30,6 @@ class AmazonTest < ActionController::TestCase
     request = Amazon.new
     response = request.make_a_request
 
-    assert response.include?()
+    assert response.include?("VTech Smart")
   end
 end
