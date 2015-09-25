@@ -8,7 +8,12 @@ class EBayController < APIController
   @app_id = ENV['EBAY_APPID']
   @cert_id = ENV['EBAY_CERTID']
 
+  attr_reader :cheapest_result
+
   def initialize
+    reference = get_ebay_reference_id(keyword: "Nintendo Wii U")
+    results = get_results(ebay_reference_id: reference)
+    @cheapest_result = get_cheapest_result(results)
   end
 
   def get_ip_zip(zip: nil)
@@ -17,6 +22,10 @@ class EBayController < APIController
             #{zip}
             ?json=1"
     JSON.parse(open(url).read)["usa"]["zip"] || ""
+  end
+
+  def get_cheapest_result(results)
+    results.sort_by { |m| m["total_price"] }.first
   end
 
   def get_results(ebay_reference_id:, sandbox: false)
@@ -40,15 +49,24 @@ class EBayController < APIController
             &itemFilter(2).value(1)=FixedPrice
             &itemFilter(3).name=LocatedIn
             &itemFilter(3).value(0)=US
-            &productId.@type=#{ebay_reference_id}
-            &productId=#{get_ebay_reference_id(keyword)}
+            &productId.@type=ReferenceID
+            &productId=#{ebay_reference_id}
             &paginationInput.entriesPerPage=10
             &sortOrder=PricePlusShippingLowest"
     response = JSON.parse(open(URI.escape(url)).read)
     matches = []
     response["findItemsByProductResponse"]["searchResult"]["item"].each do |p|
-      matches << {
+      shipping_cost = p["shippingInfo"][0]["shippingServiceCost"][0]["__value__"].to_f
+      buy_it_now_price = p["listingInfo"][0]["convertedBuyItNowPrice"][0]["__value__"].to_f
 
+      matches << {
+        item_id: p["itemId"],
+        category_name: p["primaryCategory"][0]["categoryName"],
+        shipping_cost: shipping_cost,
+        buy_it_now_price: buy_it_now_price,
+        total_price: shipping_cost + buy_it_now_price,
+        condition: p["condition"][0]["conditionDisplayName"][0],
+        url: "http://www.ebay.com/itm/#{p['itemId']}"
       }
     matches
     end
