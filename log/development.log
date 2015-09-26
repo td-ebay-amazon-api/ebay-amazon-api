@@ -1899,3 +1899,9 @@ Started GET "/api/v1/amazon?node_id=468642" for ::1 at 2015-09-25 16:53:03 -0400
 Processing by AmazonsController#get_request as HTML
   Parameters: {"node_id"=>"468642"}
 Completed 200 OK in 6029ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/amazon?node_id=468642" for ::1 at 2015-09-26 15:38:23 -0400
+Processing by AmazonsController#get_request as HTML
+  Parameters: {"node_id"=>"468642"}
+Completed 200 OK in 5735ms (Views: 1.7ms | ActiveRecord: 0.0ms)

@@ -41,7 +41,7 @@ class Amazon
      aws_secret_access_key: secret,
      associate_tag: 'dollarsinyour-20'
     )
-
+    #Define search query parameters
     query_params = {
       "ItemId" => asin,
       "IdType" => "ASIN",
@@ -55,11 +55,15 @@ class Amazon
   end
 
   def read_from_json
+    #Reads locally stored data. For testing/development only.
     file = File.read(Rails.root.join('app', 'assets', 'json', 'most_gifted_toys.json'))
     @response = JSON.parse(file)
   end
 
   def extract_asins
+    #ASIN is a unique Amazon identifier for each listing
+    #These must be extracted from the top lists to look
+    #up each item individually.
     asin_list = []
     @response["BrowseNodeLookupResponse"]["BrowseNodes"]["BrowseNode"]["TopItemSet"]["TopItem"].each do |item|
       asin_list << item["ASIN"]
@@ -68,7 +72,7 @@ class Amazon
   end
 
   def get_upc_price_list(asin_list)
-    product_information = {}
+    product_information = []
     index = 0
     asin_list.each do |asin|
       response = get_az_product(asin)
@@ -87,7 +91,8 @@ class Amazon
       end
       product_information[index] = Product.new(title, price, upc)
       index += 1
-      sleep 0.4
+      #Must delay while looping to avoid 503 from Amazon API
+      sleep 0.4 unless index == 9
     end
     product_information
   end
