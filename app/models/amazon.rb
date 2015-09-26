@@ -2,11 +2,6 @@ class Amazon
 
   attr_reader :response, :product_info
 
-  def initialize
-    @response
-    @product_info
-  end
-
   def get_az_list(node_id)
     #Look up a list of products within a category
     key = ENV['AWS_ACCESS_KEY_ID']
@@ -83,13 +78,14 @@ class Amazon
       else
         title = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["Title"]
         upc = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["UPC"]
+        az_link = response["ItemLookupResponse"]["Items"]["Item"]["DetailPageURL"]
         begin
           price = response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["LowestNewPrice"]["Amount"]
         rescue
           price = 0
         end
       end
-      product_information[index] = Product.new(title, price, upc)
+      product_information[index] = Product.new(title, price, az_link, upc)
       index += 1
       #Must delay while looping to avoid 503 from Amazon API
       sleep 0.4 unless index == 9
