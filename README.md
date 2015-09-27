@@ -1,34 +1,40 @@
-== README
+# TD eBay-Amazon API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What it does
 
-Things you may want to cover:
+This API allows a user to find a list of the most popular products on Amazon
+within a given category and compare the prices of each product to those on eBay
+to determine where the best deals are between the two e-commerce giants.
 
-* Ruby version
+## How to Use
 
-* System dependencies
+Download the repository, bundle install, and run rails server.
 
-* Configuration
+Visit localhost:*port_number*/api/v1/products/*node_id*/*list_type* to generate a request.
 
-* Database creation
+The *node_id* is how Amazon refers to product categories, and you can find a list
+of node id's further down in the documentation. Be sure to use the number only and
+exclude the parentheses.
 
-* Database initialization
+The *list_type* refers to, unsurprisingly, what type of list you want to retrieve.
+For example: most gifted, most wished for, etc. See the Amazon List Types heading
+for a complete list of list types.
 
-* How to run the test suite
+Once a valid request has been generated, the API will return a list of the 10
+most popular products and the following attributes in JSON format.
 
-* Services (job queues, cache servers, search engines, etc.)
+ * Product name
+ * Amazon's price
+ * Link to the product on Amazon
+ * eBay's price
+ * Link to the product on eBay
+ * Product UPC code
 
-* Deployment instructions
+## Sample Output
+*Add output snippet here*
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-Amazon Node Ids:
-* Apparel & Accessories 1036592
+## Amazon Node Ids:
+* Apparel & Accessories (1036592)
 * Appstore for Android (2350149011)
 * Arts, Crafts & Sewing (2617941011)
 * Automotive (15684181)
@@ -58,8 +64,21 @@ Amazon Node Ids:
 * Pet Supplies (2619533011)
 * Shoes (672123011)
 * Software (229534)
-* Specialty Stores (-4505)
 * Sports & Outdoors (3375251)
 * Tools & Hardware (228013)
 * Toys and Games (165793011)
 * Warehouse Deals (1267877011)
+
+## Amazon List Types
+* New Releases    (NewReleases)
+* Most Gifted     (MostGifted)
+* Most Wished For (MostWishedFor)
+* Top Sellers     (TopSellers)
+
+## Known Issues
+* The Amazon product information retrieval is slow. The program must be delayed
+in order to avoid Amazon's per second API call restriction.
+* Any item on Amazon that has an unlisted price (e.g. See price in cart) will
+default to 0
+* Amazon price does not take shipping cost into account. This is a limitation of the Amazon product advertising API, and cannot be fixed.
+* Output is currently limited to 10 items
