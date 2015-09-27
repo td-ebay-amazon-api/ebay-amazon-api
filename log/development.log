@@ -1914,3 +1914,15 @@ Migrating to Products (20150926201317)
   [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150926201317"]]
   [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/api/v1/products/172282/MostGifted" for ::1 at 2015-09-27 15:36:14 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"172282", "list_type"=>"MostGifted"}
+Completed 200 OK in 6004ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/172282/NewReleases" for ::1 at 2015-09-27 15:37:22 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"172282", "list_type"=>"NewReleases"}
+Completed 200 OK in 5592ms (Views: 2.3ms | ActiveRecord: 0.0ms)

@@ -2,7 +2,7 @@ class Amazon
 
   attr_reader :response, :product_info
 
-  def get_az_list(node_id)
+  def get_az_list(node_id, list_type)
     #Look up a list of products within a category
     key = ENV['AWS_ACCESS_KEY_ID']
     secret = ENV['AWS_SECRET_ACCESS_KEY']
@@ -16,7 +16,7 @@ class Amazon
 
     query_params = {
     "BrowseNodeId" => node_id,
-    "ResponseGroup" => "MostGifted"
+    "ResponseGroup" => list_type
     }
     @response = request.browse_node_lookup(
      query: query_params
@@ -93,8 +93,8 @@ class Amazon
     product_information
   end
 
-  def make_a_request(node_id)
-    get_az_list(node_id)     #Live
+  def make_a_request(node_id, list_type)
+    get_az_list(node_id, list_type)     #Live
     #read_from_json  #Development/testing
     asin_list = extract_asins
     get_upc_price_list(asin_list)
