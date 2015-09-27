@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'api/v1/amazon' => 'amazons#get_request'
-  get 'api/v1/ebay/:keyword' => 'ebay#show'
-  get 'api/v1/ebay/all/:keyword' => 'ebay#show_results'
+  get   'api/v1/amazon'                               => 'amazons#get_request'
+  get   'api/v1/products/:node_id/:list_type'         => 'api#make_a_comparison'
+  get   'api/v1/ebay/:keyword'                        => 'ebay#show'
+  get   'api/v1/ebay/search/:keyword'                       => 'ebay#show_results'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

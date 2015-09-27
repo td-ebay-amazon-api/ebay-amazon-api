@@ -92,8 +92,4 @@ class Ebay
     zip_url = "http://geocoder.ca/#{zip}?json=1"
     JSON.parse(open(zip_url).read)["usa"]["zip"] || ""
   end
-
 end
-
-
-

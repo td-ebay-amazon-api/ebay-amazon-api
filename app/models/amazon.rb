@@ -2,12 +2,7 @@ class Amazon
 
   attr_reader :response, :product_info
 
-  def initialize
-    @response
-    @product_info
-  end
-
-  def get_az_list(node_id)
+  def get_az_list(node_id, list_type)
     #Look up a list of products within a category
     key = ENV['AWS_ACCESS_KEY_ID']
     secret = ENV['AWS_SECRET_ACCESS_KEY']
@@ -21,7 +16,7 @@ class Amazon
 
     query_params = {
     "BrowseNodeId" => node_id,
-    "ResponseGroup" => "MostGifted"
+    "ResponseGroup" => list_type
     }
     @response = request.browse_node_lookup(
      query: query_params
@@ -83,13 +78,14 @@ class Amazon
       else
         title = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["Title"]
         upc = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["UPC"]
+        az_link = response["ItemLookupResponse"]["Items"]["Item"]["DetailPageURL"]
         begin
           price = response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["LowestNewPrice"]["Amount"]
         rescue
           price = 0
         end
       end
-      product_information[index] = Product.new(title, price, upc)
+      product_information[index] = Product.new(title, price, az_link, upc)
       index += 1
       #Must delay while looping to avoid 503 from Amazon API
       sleep 0.4 unless index == 9
@@ -97,8 +93,8 @@ class Amazon
     product_information
   end
 
-  def make_a_request(node_id)
-    get_az_list(node_id)     #Live
+  def make_a_request(node_id, list_type)
+    get_az_list(node_id, list_type)     #Live
     #read_from_json  #Development/testing
     asin_list = extract_asins
     get_upc_price_list(asin_list)
