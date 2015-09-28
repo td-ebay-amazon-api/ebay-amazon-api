@@ -22,7 +22,7 @@ class Ebay
   end
 
   def search(upc:, entries: 10, sandbox: false)
-    unless @response
+    unless @response && @upc == upc
       sandbox ? app_id = @app_id_sandbox : app_id = @app_id
       ebay_url = "http://svcs.ebay.com/services/search/FindingService/v1"
       ebay_url << "?OPERATION-NAME=findItemsByKeywords"

@@ -3481,3 +3481,33 @@ Started GET "/api/v1/products/172282/MostWishedFor" for 127.0.0.1 at 2015-09-28 
 Processing by ApiController#make_a_comparison as HTML
   Parameters: {"node_id"=>"172282", "list_type"=>"MostWishedFor"}
 Completed 200 OK in 6606ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/172282/MostWishedFor" for 127.0.0.1 at 2015-09-28 08:41:53 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"172282", "list_type"=>"MostWishedFor"}
+Completed 200 OK in 7261ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/165793011/MostWishedFor" for 127.0.0.1 at 2015-09-28 09:04:50 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"165793011", "list_type"=>"MostWishedFor"}
+Completed 200 OK in 5996ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/165793011/MostWishedFor" for 127.0.0.1 at 2015-09-28 09:23:00 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"165793011", "list_type"=>"MostWishedFor"}
+Completed 200 OK in 7319ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/165793011/MostWishedFor" for 127.0.0.1 at 2015-09-28 09:25:30 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"165793011", "list_type"=>"MostWishedFor"}
+Completed 200 OK in 6173ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/165793011/MostWishedFor" for 127.0.0.1 at 2015-09-28 09:26:02 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"165793011", "list_type"=>"MostWishedFor"}
+Completed 200 OK in 12087ms (Views: 1.6ms | ActiveRecord: 0.0ms)
