@@ -110,3 +110,4 @@ Once a valid request has been generated, the API will return a list of the 10 mo
 * Any item on Amazon that has an unlisted price (e.g. See price in cart) will default to null
 * Amazon price does not take shipping cost into account. This is a limitation of the Amazon product advertising API, and cannot be fixed.
 * Output is currently limited to 10 items
+* eBay search is by keyword; this can result some inaccurate matches. Matching by UPC, EAN, ISBN, or eBay ReferenceID will require a little more work.
