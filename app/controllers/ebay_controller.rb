@@ -1,7 +1,7 @@
-class EbayController < APIController
+class EbayController < ApiController
 
   def show
-    result = Ebay.new.cheapest_result(keyword: params[:keyword])
+    result = Ebay.new.cheapest_result(upc: params[:upc])
 
     begin
       respond_to do |format|
@@ -13,9 +13,9 @@ class EbayController < APIController
     end
   end
 
-  def show_results
+  def all
     params[:number] ||= 10
-    results = Ebay.new.search(keyword: params[:keyword], entries: params[:number])
+    results = Ebay.new.search(upc: params[:upc], entries: params[:number])
     respond_to do |format|
       format.json { render json: results.to_json, status: 200 }
       format.xml  { render xml: results.to_xml, status: 200 }

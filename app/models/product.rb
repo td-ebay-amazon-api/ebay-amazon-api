@@ -1,5 +1,5 @@
 class Product
-  attr_accessor :title, :az_price, :upc, :ebay_price, :ebay_link
+  attr_accessor :title, :az_price, :upc, :az_link, :ebay_price, :ebay_link
 
   def initialize (title, az_price, az_link, upc)
     @title = title

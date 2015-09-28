@@ -73,8 +73,8 @@ class Amazon
       response = get_az_product(asin)
       if response["ItemLookupResponse"]["Items"]["Request"]["Errors"]
         title = "Item not available through this API"
-        upc = 0
-        price = 0
+        upc = nil
+        price = nil
       else
         title = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["Title"]
         upc = response["ItemLookupResponse"]["Items"]["Item"]["ItemAttributes"]["UPC"]
@@ -82,7 +82,7 @@ class Amazon
         begin
           price = response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["LowestNewPrice"]["Amount"]
         rescue
-          price = 0
+          price = nil
         end
       end
       product_information[index] = Product.new(title, price, az_link, upc)
