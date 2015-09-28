@@ -1,0 +1,1568 @@
+{
+  "findItemsByKeywordsResponse": [
+    {
+      "ack": [
+        "Success"
+      ],
+      "version": [
+        "1.13.0"
+      ],
+      "timestamp": [
+        "2015-09-28T12:18:45.294Z"
+      ],
+      "searchResult": [
+        {
+          "@count": "10",
+          "item": [
+            {
+              "itemId": [
+                "171950761685"
+              ],
+              "title": [
+                "NEW Super Mario Maker (Nintendo Wii U, 2015) digital version "
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs2.ebaystatic.com/m/m765DK4Tm02-XaoTfPTJcCg/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/NEW-Super-Mario-Maker-Nintendo-Wii-U-2015-digital-version-/171950761685"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "false"
+              ],
+              "postalCode": [
+                "30260"
+              ],
+              "location": [
+                "Morrow,GA,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "Free"
+                  ],
+                  "shipToLocations": [
+                    "US",
+                    "CA",
+                    "GB",
+                    "AU",
+                    "AT",
+                    "BE",
+                    "FR",
+                    "DE",
+                    "IT",
+                    "JP",
+                    "ES",
+                    "TW",
+                    "NL",
+                    "CN",
+                    "HK",
+                    "MX",
+                    "DK",
+                    "RO",
+                    "SK",
+                    "BG",
+                    "CZ",
+                    "FI",
+                    "HU",
+                    "LV",
+                    "LT",
+                    "MT",
+                    "EE",
+                    "GR",
+                    "PT",
+                    "CY",
+                    "SI",
+                    "SE",
+                    "KR",
+                    "ID",
+                    "ZA",
+                    "TH",
+                    "IE",
+                    "PL",
+                    "RU",
+                    "IL"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "2"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "50.0"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "50.0"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P29DT11H45M20S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-28T00:04:05.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-28T00:04:05.000Z"
+                  ],
+                  "listingType": [
+                    "FixedPrice"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "false"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "355.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "281810122010"
+              ],
+              "title": [
+                "New Super Mario Maker for Nintendo Wii U -Disc Only"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs3.ebaystatic.com/m/meMscsUlJJJ19Cj6gWmgOsA/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/New-Super-Mario-Maker-Nintendo-Wii-U-Disc-Only-/281810122010"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "true"
+              ],
+              "postalCode": [
+                "10452"
+              ],
+              "location": [
+                "Bronx,NY,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "FlatDomesticCalculatedInternational"
+                  ],
+                  "shipToLocations": [
+                    "Worldwide"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "2"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "51.0"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "51.0"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P2DT10H36M19S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-25T22:55:04.000Z"
+                  ],
+                  "endTime": [
+                    "2015-09-30T22:55:04.000Z"
+                  ],
+                  "listingType": [
+                    "FixedPrice"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "false"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "440.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "331649963082"
+              ],
+              "title": [
+                "SUPER MARIO MAKER * NINTENDO Wii U * BRAND NEW FACTORY SEALED!"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs3.ebaystatic.com/m/mJty9SEBzRNCE5IPGLtAF0g/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/SUPER-MARIO-MAKER-NINTENDO-Wii-U-BRAND-NEW-FACTORY-SEALED-/331649963082"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "false"
+              ],
+              "postalCode": [
+                "14150"
+              ],
+              "location": [
+                "Tonawanda,NY,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "2.99"
+                    }
+                  ],
+                  "shippingType": [
+                    "Flat"
+                  ],
+                  "shipToLocations": [
+                    "US",
+                    "CA"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "1"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "53.99"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "53.99"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P10DT15H16M34S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-09T03:30:19.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-09T03:35:19.000Z"
+                  ],
+                  "listingType": [
+                    "StoreInventory"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "true"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "500.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "true"
+              ]
+            },
+            {
+              "itemId": [
+                "231696191215"
+              ],
+              "title": [
+                "Super Mario Maker (Nintendo Wii U, 2015)"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs4.ebaystatic.com/m/mxSIQd8cSynyEWcAJds86Ug/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/Super-Mario-Maker-Nintendo-Wii-U-2015-/231696191215"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "true"
+              ],
+              "postalCode": [
+                "91754"
+              ],
+              "location": [
+                "Monterey Park,CA,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "Free"
+                  ],
+                  "shipToLocations": [
+                    "US"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "1"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "56.99"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "56.99"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P23DT4H37M2S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "true"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-21T16:50:47.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-21T16:55:47.000Z"
+                  ],
+                  "listingType": [
+                    "FixedPrice"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "false"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "2225.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "181863522522"
+              ],
+              "title": [
+                "NEW Super Mario Maker (Nintendo Wii U, 2015)"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs3.ebaystatic.com/m/mnOpjdMqeyh7r4IbKsvv21Q/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/NEW-Super-Mario-Maker-Nintendo-Wii-U-2015-/181863522522"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "true"
+              ],
+              "postalCode": [
+                "44143"
+              ],
+              "location": [
+                "Cleveland,OH,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "3.99"
+                    }
+                  ],
+                  "shippingType": [
+                    "Calculated"
+                  ],
+                  "shipToLocations": [
+                    "Worldwide"
+                  ],
+                  "expeditedShipping": [
+                    "true"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "2"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "54.95"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "54.95"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P11DT4H48M7S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-09T17:06:52.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-09T17:06:52.000Z"
+                  ],
+                  "listingType": [
+                    "StoreInventory"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "true"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "430.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "151826202191"
+              ],
+              "title": [
+                "Super Mario Maker (Nintendo Wii U, 2015) factory sealed"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs4.ebaystatic.com/m/mDEYTk40zJtY2Pb75lVeI7Q/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/Super-Mario-Maker-Nintendo-Wii-U-2015-factory-sealed-/151826202191"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "false"
+              ],
+              "postalCode": [
+                "33196"
+              ],
+              "location": [
+                "Miami,FL,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "Free"
+                  ],
+                  "shipToLocations": [
+                    "US"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "1"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "58.99"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "58.99"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P1DT12H53M59S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-23T01:12:44.000Z"
+                  ],
+                  "endTime": [
+                    "2015-09-30T01:12:44.000Z"
+                  ],
+                  "listingType": [
+                    "FixedPrice"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "true"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "705.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "151817213031"
+              ],
+              "title": [
+                "Super Mario Maker for Nintendo Wii U Brand New! Factory Sealed!"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs4.ebaystatic.com/m/mJrxrM5IVMcLJBDeTAohcpA/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/Super-Mario-Maker-Nintendo-Wii-U-Brand-New-Factory-Sealed-/151817213031"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "false"
+              ],
+              "postalCode": [
+                "80917"
+              ],
+              "location": [
+                "Colorado Springs,CO,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "FlatDomesticCalculatedInternational"
+                  ],
+                  "shipToLocations": [
+                    "US",
+                    "CA",
+                    "AU",
+                    "JP",
+                    "TW",
+                    "CN",
+                    "HK",
+                    "MX",
+                    "KR",
+                    "ID",
+                    "ZA",
+                    "TH",
+                    "IL",
+                    "NZ",
+                    "PH",
+                    "SG",
+                    "SA",
+                    "QA",
+                    "KW",
+                    "BH",
+                    "MY",
+                    "BR",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "DO",
+                    "PA",
+                    "TT",
+                    "GT",
+                    "SV",
+                    "HN",
+                    "JM"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "1"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "58.99"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "58.99"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P16DT15H47M27S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-15T04:06:12.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-15T04:06:12.000Z"
+                  ],
+                  "listingType": [
+                    "StoreInventory"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "true"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "1445.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "221897730497"
+              ],
+              "title": [
+                "Super Mario Maker (Wii U, 2015) With FREE UPGRADE TO PRIORITY SHIPPING"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs2.ebaystatic.com/m/mi06SNInhTzhuIAeydBf_xA/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/Super-Mario-Maker-Wii-U-2015-FREE-UPGRADE-PRIORITY-SHIPPING-/221897730497"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "false"
+              ],
+              "postalCode": [
+                "21220"
+              ],
+              "location": [
+                "Middle River,MD,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "4.62"
+                    }
+                  ],
+                  "shippingType": [
+                    "Calculated"
+                  ],
+                  "shipToLocations": [
+                    "US"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "2"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "54.99"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "54.99"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P3DT19H33M10S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-27T07:51:55.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-02T07:51:55.000Z"
+                  ],
+                  "listingType": [
+                    "StoreInventory"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "false"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "280.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            },
+            {
+              "itemId": [
+                "141775809506"
+              ],
+              "title": [
+                "SUPER MARIO MAKER Nintendo Wii U game sealed new, global shipping"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs3.ebaystatic.com/m/mJty9SEBzRNCE5IPGLtAF0g/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/SUPER-MARIO-MAKER-Nintendo-Wii-U-game-sealed-new-global-shipping-/141775809506"
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "true"
+              ],
+              "postalCode": [
+                "65053"
+              ],
+              "location": [
+                "Lohman,MO,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "FlatDomesticCalculatedInternational"
+                  ],
+                  "shipToLocations": [
+                    "Worldwide"
+                  ],
+                  "expeditedShipping": [
+                    "true"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "1"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "59.68"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "59.68"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P17DT7H0M32S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-15T19:14:17.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-15T19:19:17.000Z"
+                  ],
+                  "listingType": [
+                    "StoreInventory"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "true"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "775.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "true"
+              ]
+            },
+            {
+              "itemId": [
+                "301737333515"
+              ],
+              "title": [
+                "Super Mario Maker - Nintendo Wii U WUPQAMAE"
+              ],
+              "globalId": [
+                "EBAY-US"
+              ],
+              "subtitle": [
+                "Authorized Nintendo Dealer - Brand New - Full Warranty"
+              ],
+              "primaryCategory": [
+                {
+                  "categoryId": [
+                    "139973"
+                  ],
+                  "categoryName": [
+                    "Video Games"
+                  ]
+                }
+              ],
+              "galleryURL": [
+                "http://thumbs4.ebaystatic.com/m/mJty9SEBzRNCE5IPGLtAF0g/140.jpg"
+              ],
+              "viewItemURL": [
+                "http://www.ebay.com/itm/Super-Mario-Maker-Nintendo-Wii-U-WUPQAMAE-/301737333515"
+              ],
+              "productId": [
+                {
+                  "@type": "ReferenceID",
+                  "__value__": "197177029"
+                }
+              ],
+              "paymentMethod": [
+                "PayPal"
+              ],
+              "autoPay": [
+                "true"
+              ],
+              "postalCode": [
+                "30350"
+              ],
+              "location": [
+                "Atlanta,GA,USA"
+              ],
+              "country": [
+                "US"
+              ],
+              "shippingInfo": [
+                {
+                  "shippingServiceCost": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "0.0"
+                    }
+                  ],
+                  "shippingType": [
+                    "FlatDomesticCalculatedInternational"
+                  ],
+                  "shipToLocations": [
+                    "US",
+                    "CA",
+                    "GB",
+                    "AU",
+                    "AT",
+                    "BE",
+                    "FR",
+                    "DE",
+                    "IT",
+                    "JP",
+                    "ES",
+                    "TW",
+                    "NL",
+                    "CN",
+                    "HK",
+                    "MX",
+                    "DK",
+                    "RO",
+                    "SK",
+                    "BG",
+                    "CZ",
+                    "FI",
+                    "HU",
+                    "LV",
+                    "LT",
+                    "MT",
+                    "EE",
+                    "GR",
+                    "PT",
+                    "CY",
+                    "SI",
+                    "SE",
+                    "KR",
+                    "ID",
+                    "ZA",
+                    "TH",
+                    "IE",
+                    "PL",
+                    "RU",
+                    "IL"
+                  ],
+                  "expeditedShipping": [
+                    "false"
+                  ],
+                  "oneDayShippingAvailable": [
+                    "false"
+                  ],
+                  "handlingTime": [
+                    "2"
+                  ]
+                }
+              ],
+              "sellingStatus": [
+                {
+                  "currentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "59.69"
+                    }
+                  ],
+                  "convertedCurrentPrice": [
+                    {
+                      "@currencyId": "USD",
+                      "__value__": "59.69"
+                    }
+                  ],
+                  "sellingState": [
+                    "Active"
+                  ],
+                  "timeLeft": [
+                    "P12DT9H30M6S"
+                  ]
+                }
+              ],
+              "listingInfo": [
+                {
+                  "bestOfferEnabled": [
+                    "false"
+                  ],
+                  "buyItNowAvailable": [
+                    "false"
+                  ],
+                  "startTime": [
+                    "2015-09-10T21:43:51.000Z"
+                  ],
+                  "endTime": [
+                    "2015-10-10T21:48:51.000Z"
+                  ],
+                  "listingType": [
+                    "FixedPrice"
+                  ],
+                  "gift": [
+                    "false"
+                  ]
+                }
+              ],
+              "returnsAccepted": [
+                "true"
+              ],
+              "distance": [
+                {
+                  "@unit": "mi",
+                  "__value__": "340.0"
+                }
+              ],
+              "condition": [
+                {
+                  "conditionId": [
+                    "1000"
+                  ],
+                  "conditionDisplayName": [
+                    "Brand New"
+                  ]
+                }
+              ],
+              "isMultiVariationListing": [
+                "false"
+              ],
+              "topRatedListing": [
+                "false"
+              ]
+            }
+          ]
+        }
+      ],
+      "paginationOutput": [
+        {
+          "pageNumber": [
+            "1"
+          ],
+          "entriesPerPage": [
+            "10"
+          ],
+          "totalPages": [
+            "4"
+          ],
+          "totalEntries": [
+            "33"
+          ]
+        }
+      ],
+      "itemSearchURL": [
+        "http://www.ebay.com/sch/i.html?LH_SALE_CURRENCY=1&_nkw=045496903756&fscurrency=USD&LH_BIN=1&LH_ItemCondition=1000%7C1500%7C2000&LH_LocatedIn=1&_ddo=1&_fls=1&_ipg=10&_pgn=1&_pos=27606&_salic=1&_sop=15&_stpos=27606"
+      ]
+    }
+  ]
+}
