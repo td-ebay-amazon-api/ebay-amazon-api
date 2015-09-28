@@ -83,6 +83,7 @@ class Amazon
           price = response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["LowestNewPrice"]["Amount"]
         rescue
           price = nil
+          price = "Out of stock" if response["ItemLookupResponse"]["Items"]["Item"]["OfferSummary"]["TotalNew"] == "0"
         end
       end
       product_information[index] = Product.new(title, price, az_link, upc)
