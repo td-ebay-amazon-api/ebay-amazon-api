@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  get   'api/v1/amazon'                       => 'amazons#get_request'
+  get   'api/v1/amazon/:node_id/:list_type'   => 'amazons#get_request'
   get   'api/v1/products/:node_id/:list_type' => 'api#make_a_comparison'
   get   'api/v1/ebay/:upc'                    => 'ebay#show'
-  get   'api/v1/ebay/search/:upc'             => 'ebay#all'
+  get   'api/v1/ebay/:upc/:entries'           => 'ebay#all'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

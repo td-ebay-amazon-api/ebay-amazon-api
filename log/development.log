@@ -3409,3 +3409,38 @@ Started GET "/api/v1/products/172282/MostWishedFor" for 127.0.0.1 at 2015-09-27 
 Processing by ApiController#make_a_comparison as HTML
   Parameters: {"node_id"=>"172282", "list_type"=>"MostWishedFor"}
 Completed 200 OK in 10950ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/products/468642/MostWishedFor" for 127.0.0.1 at 2015-09-27 20:52:42 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"468642", "list_type"=>"MostWishedFor"}
+Completed 500 Internal Server Error in 4816ms (ActiveRecord: 0.0ms)
+
+Excon::Errors::ServiceUnavailable (Expected(200) <=> Actual(503 Service Unavailable)
+):
+  app/models/amazon.rb:46:in `get_az_product'
+  app/models/amazon.rb:73:in `block in get_upc_price_list'
+  app/models/amazon.rb:72:in `each'
+  app/models/amazon.rb:72:in `get_upc_price_list'
+  app/models/amazon.rb:100:in `make_a_request'
+  app/controllers/api_controller.rb:8:in `make_a_comparison'
+
+
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.5ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/bernheisel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.0ms)
+
+
+Started GET "/api/v1/products/468642/TopSellers" for 127.0.0.1 at 2015-09-27 20:54:26 -0400
+Processing by ApiController#make_a_comparison as HTML
+  Parameters: {"node_id"=>"468642", "list_type"=>"TopSellers"}
+Completed 200 OK in 9601ms (Views: 1.6ms | ActiveRecord: 0.0ms)

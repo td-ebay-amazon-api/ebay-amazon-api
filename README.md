@@ -10,28 +10,43 @@ to determine where the best deals are between the two e-commerce giants.
 
 Download the repository, bundle install, and run rails server.
 
-Visit localhost:*port_number*/api/v1/products/*node_id*/*list_type* to generate a request.
+To generate a request, visit here:
+<pre>GET http://localhost:*port_number*/api/v1/products/*node_id*/*list_type*</pre>
 
-The *node_id* is how Amazon refers to product categories, and you can find a list
-of node id's further down in the documentation. Be sure to use the number only and
-exclude the parentheses.
+The *node_id* is how Amazon refers to product categories, and you can find a [list of node id's](#amazon-node-ids) further down in the documentation. Be sure to use the number only and exclude the parentheses.
 
 The *list_type* refers to, unsurprisingly, what type of list you want to retrieve.
-For example: most gifted, most wished for, etc. See the Amazon List Types heading
-for a complete list of list types.
+For example: most gifted, most wished for, etc. See the [Amazon List Types](#amazon-list-types) section for a complete list of list types.
 
-Once a valid request has been generated, the API will return a list of the 10
-most popular products and the following attributes in JSON format.
+Once a valid request has been generated, the API will return a list of the 10 most popular products and the following attributes in JSON format.
 
  * Product name
  * Amazon's price
  * Link to the product on Amazon
  * eBay's price
  * Link to the product on eBay
- * Product UPC code
+ * Product UPC code (sourced from Amazon)
 
 ## Sample Output
-*Add output snippet here*
+```json
+  {
+    "title": "AmazonBasics High-Speed HDMI Cable - 6.5 Feet (2 Meters) Supports Ethernet, 3D, 4K and Audio Return",
+    "az_price": 5.49,
+    "az_link": "http://www.amazon.com/AmazonBasics-High-Speed-HDMI-Cable-Supports/dp/B003L1ZYYM%3Fpsc%3D1%26SubscriptionId%3DAKIAJ64U7F3OSBNH7ERQ%26tag%3Ddollarsinyour-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003L1ZYYM",
+    "upc": "848719052596",
+    "ebay_price": 6.59,
+    "ebay_link": "http://www.ebay.com/itm/AmazonBasics-High-Speed-HDMI-Cable-6-5-Feet-2-0-Meters-Supports-Ethernet-3D-/301291840812"
+  },
+  {
+    "title": "$20 PlayStation Store Gift Card - PS3/ PS4/ PS Vita [Digital Code]",
+    "az_price": 19.99,
+    "az_link": "http://www.amazon.com/20-PlayStation-Store-Gift-Card/dp/B004RMK4BC%3Fpsc%3D1%26SubscriptionId%3DAKIAJ64U7F3OSBNH7ERQ%26tag%3Ddollarsinyour-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB004RMK4BC",
+    "upc": null,
+    "ebay_price": null,
+    "ebay_link": null
+  },
+  ...
+```
 
 ## Amazon Node Ids:
 * Apparel & Accessories (1036592)
@@ -44,7 +59,7 @@ most popular products and the following attributes in JSON format.
 * Books (283155)
 * Camera & Photo (502394)
 * Car Toys (10963061)
-* Cell Phones & Accessories (2335753011)
+* Cell Phones & Accessories (2335752011)
 * Computer & Video Games (468642)
 * Computers (541966)
 * Electronics (172282)
@@ -76,9 +91,7 @@ most popular products and the following attributes in JSON format.
 * Top Sellers     (TopSellers)
 
 ## Known Issues
-* The Amazon product information retrieval is slow. The program must be delayed
-in order to avoid Amazon's per second API call restriction.
-* Any item on Amazon that has an unlisted price (e.g. See price in cart) will
-default to 0
+* The Amazon product information retrieval is slow. The program must be delayed in order to avoid Amazon's per second API call restriction.
+* Any item on Amazon that has an unlisted price (e.g. See price in cart) will default to null
 * Amazon price does not take shipping cost into account. This is a limitation of the Amazon product advertising API, and cannot be fixed.
 * Output is currently limited to 10 items
