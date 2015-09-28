@@ -10,26 +10,23 @@ to determine where the best deals are between the two e-commerce giants.
 
 1. Clone the repository
 2. Run `bundle install`
-3. Get the eBay/Amazon API keys into your environment variables
-
-eBay API: https://go.developer.ebay.com/
-```shell
-export EBAY_DEVID=#YourInfo
-export EBAY_APPID_SANDBOX=#YourInfo
-export EBAY_CERTID_SANDBOX=#YourInfo
-export EBAY_APPID=#YourInfo
-export EBAY_CERTID=#YourInfo
-```
-
-Amazon API: https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html
-```shell
-export AWS_ACCESS_KEY_ID=#YourInfo
-export AWS_SECRET_ACCESS_KEY=#YourInfo
-```
-
-4. Run rails server.
-5. Use it! To generate a request, visit here:
-<pre>GET http://localhost:*port_number*/api/v1/products/*node_id*/*list_type*</pre>
+3. Get the eBay/Amazon API keys into your shell environment variables
+  * eBay API: https://go.developer.ebay.com/
+  ```shell
+  export EBAY_DEVID=#YourInfo
+  export EBAY_APPID_SANDBOX=#YourInfo
+  export EBAY_CERTID_SANDBOX=#YourInfo
+  export EBAY_APPID=#YourInfo
+  export EBAY_CERTID=#YourInfo
+  ```
+  * Amazon API: https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html
+  ```shell
+  export AWS_ACCESS_KEY_ID=#YourInfo
+  export AWS_SECRET_ACCESS_KEY=#YourInfo
+  ```
+4. Run rails server. `rails s`
+5. Use it! To generate a request, visit this URL in your browser:
+<pre>http://localhost:*port_number*/api/v1/products/*node_id*/*list_type*</pre>
 
 The *node_id* is how Amazon refers to product categories, and you can find a [list of node id's](#amazon-node-ids) further down in the documentation. Be sure to use the number only and exclude the parentheses.
 
